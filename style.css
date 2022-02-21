@@ -1,0 +1,187 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+/* Navigation Bar */
+.navbar-links {
+  border: 2px solid transparent;
+  font-size: 100%;
+}
+
+.navbar-links:hover {
+  text-decoration: none;
+  font-size: 115%;
+  border-bottom: 2px solid #789389;
+  transition: 0.5s ease;
+}
+
+/* Showcase Container */
+.showcase-container {
+  height: 100vh;
+}
+
+/* main_row Allignments */
+.main_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main_row Font size */
+.main_row h1 {
+  font-size: 5rem;
+}
+
+/* Showcase image size */
+.main_row img {
+  width: auto;
+  height: 100vh;
+}
+
+/* About Section */
+.about {
+  background: #ececec;
+  border-radius: 0.5rem;
+}
+
+.card {
+  border-bottom: 8px solid #ececec;
+}
+
+/* Connect with Me  */
+#conectWithMe {
+  background: #ececec;
+}
+
+/* Connect with me */
+.media_link {
+  padding: 1rem;
+  max-width: 15rem;
+  margin-left: 1rem;
+  border: 2px solid #ececec;
+  border-radius: 0.5rem;
+}
+
+/*------------------------------------
+ - ADDITIONAL COLOURS TO WORK WITH BOOTSTRAP (CONVERTED TO CSS) 
+ ------------------------------------*/
+
+ /* mainGreen */
+ .alert-mainGreen {
+  color: #182d27;
+  background-color: #b5d7cd;
+  border-color: #a8cfc4;
+}
+.alert-mainGreen hr {
+  border-top-color: #98c7b9;
+}
+.alert-mainGreen .alert-link {
+  color: #060c0a;
+}
+.badge-mainGreen {
+  color: #fff;
+  background-color: #447d6c;
+}
+.badge-mainGreen[href]:hover, .badge-mainGreen[href]:focus {
+  color: #fff;
+  background-color: #325b4f;
+}
+.bg-mainGreen {
+  background-color: #447d6c !important;
+}
+a.bg-mainGreen:hover, a.bg-mainGreen:focus, button.bg-mainGreen:hover, button.bg-mainGreen:focus {
+  background-color: #325b4f !important;
+}
+.border-mainGreen {
+  border-color: #447d6c !important;
+}
+.btn-mainGreen {
+  color: #fff;
+  background-color: #447d6c;
+  border-color: #447d6c;
+}
+.btn-mainGreen:hover {
+  color: #fff;
+  background-color: #376558;
+  border-color: #325b4f;
+}
+.btn-mainGreen:focus, .btn-mainGreen.focus {
+  box-shadow: 0 0 0 0.2rem rgba(68, 125, 108, 0.5);
+}
+.btn-mainGreen.disabled, .btn-mainGreen:disabled {
+  color: #fff;
+  background-color: #447d6c;
+  border-color: #447d6c;
+}
+.btn-mainGreen:not(:disabled):not(.disabled):active, .btn-mainGreen:not(:disabled):not(.disabled).active, .show > .btn-mainGreen.dropdown-toggle {
+  color: #fff;
+  background-color: #325b4f;
+  border-color: #2c5246;
+}
+.btn-mainGreen:not(:disabled):not(.disabled):active:focus, .btn-mainGreen:not(:disabled):not(.disabled).active:focus, .show > .btn-mainGreen.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(68, 125, 108, 0.5);
+}
+.btn-outline-mainGreen {
+  color: #447d6c;
+  background-color: transparent;
+  border-color: #447d6c;
+}
+.btn-outline-mainGreen:hover {
+  color: #fff;
+  background-color: #447d6c;
+  border-color: #447d6c;
+}
+.btn-outline-mainGreen:focus, .btn-outline-mainGreen.focus {
+  box-shadow: 0 0 0 0.2rem rgba(68, 125, 108, 0.5);
+}
+.btn-outline-mainGreen.disabled, .btn-outline-mainGreen:disabled {
+  color: #447d6c;
+  background-color: transparent;
+}
+.btn-outline-mainGreen:not(:disabled):not(.disabled):active, .btn-outline-mainGreen:not(:disabled):not(.disabled).active, .show > .btn-outline-mainGreen.dropdown-toggle {
+  color: #fff;
+  background-color: #447d6c;
+  border-color: #447d6c;
+}
+.btn-outline-mainGreen:not(:disabled):not(.disabled):active:focus, .btn-outline-mainGreen:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-mainGreen.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(68, 125, 108, 0.5);
+}
+.list-group-item-mainGreen {
+  color: #182d27;
+  background-color: #a8cfc4;
+}
+.list-group-item-mainGreen.list-group-item-action:hover, .list-group-item-mainGreen.list-group-item-action:focus {
+  color: #182d27;
+  background-color: #98c7b9;
+}
+.list-group-item-mainGreen.list-group-item-action.active {
+  color: #fff;
+  background-color: #182d27;
+  border-color: #182d27;
+}
+.table-mainGreen, .table-mainGreen > th, .table-mainGreen > td {
+  background-color: #a8cfc4;
+}
+.table-hover .table-mainGreen:hover {
+  background-color: #98c7b9;
+}
+.table-hover .table-mainGreen:hover > td, .table-hover .table-mainGreen:hover > th {
+  background-color: #98c7b9;
+}
+.text-mainGreen {
+  color: #447d6c !important;
+}
+a.text-mainGreen:hover, a.text-mainGreen:focus {
+  color: #325b4f !important;
+}
