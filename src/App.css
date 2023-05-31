@@ -1,5 +1,6 @@
 :root {
   --black: rgb(14, 14, 14);
+  background-color: var(--black);
 }
 
 section {
@@ -14,4 +15,5 @@ section {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black);
+  background-color: black;
 }

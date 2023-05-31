@@ -1,0 +1,69 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.navbar-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-button span {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-button.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-button.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99; /* Increase z-index to appear above the navbar button */
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Add margin to remove default spacing */
+}
+
+.navbar-menu li {
+  margin-bottom: 20px;
+}
+
+.navbar-menu a {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Additional styling for the nav options can be added here */
