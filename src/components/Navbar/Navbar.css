@@ -20,7 +20,7 @@
 .navbar-button span {
   width: 100%;
   height: 3px;
-  background-color: #000;
+  background-color: #e8dddd;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -42,17 +42,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99; /* Increase z-index to appear above the navbar button */
 }
 
 .navbar-menu ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; /* Add margin to remove default spacing */
 }
 
 .navbar-menu li {

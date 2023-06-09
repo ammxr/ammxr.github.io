@@ -1,0 +1,88 @@
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 3rem;
+    overflow: hidden;
+  }
+  
+  .card-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card {
+    width: 20rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 0 0.5rem; /* Add margin to create a gap between cards */
+  }
+  
+  
+
+
+  .card:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  }
+  
+  
+  .card .c-imageFrame {
+    position: relative;
+    z-index: 1;
+    height: 20rem;
+    background-color: #36a7b7;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .card .c-titleFrame {
+    position: relative;
+    top: -20px;
+    height: 50px;
+    background-color: #ccc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .card .c-title {
+    color: #565656;
+    padding-top: 4%;
+  }
+  
+  .arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background-color: #ccc;
+  }
+  
+  .previous {
+    margin-right: 10px;
+  }
+  
+  .next {
+    margin-left: 10px;
+  }
+  
