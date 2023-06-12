@@ -1,35 +1,60 @@
 .card {
-    width: 20rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative; /* Add position relative to create a positioning context */
-  }
-  
-  .c-imageFrame {
-    position: relative;
-    z-index: 1;
-    height: 20rem;
-    background-color: #36A7B7;
-    border-radius: 10px;
-    padding: 10px; 
-    box-sizing: border-box; 
-  }
-  
-  .c-titleFrame {
-    position: relative; 
-    top: -20px; 
-    height: 50px;
-    background-color: #ccc;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    border-radius: 0 0 4px 4px;
-  }
+  width: 20rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
 
-  c-title {
-    color: #565656;
-    padding-top: 4%;
-  }
+.card.active {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.card.expanded {
+  width: 30rem;
+}
+
+.card .c-imageFrame {
+  position: relative;
+  z-index: 1;
+  height: 20rem;
+  background-color: #36a7b7;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card .c-titleFrame {
+  position: relative;
+  top: -20px;
+  height: 50px;
+  background-color: #ccc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0 0 4px 4px;
+}
+
+.card .c-titleFrame h2 {
+  color: #565656;
+  padding-top: 4%;
+}
+
+.card.center-card {
+  width: 25rem; /* Adjust the width for the center card */
+}
+
+.card .c-descriptionFrame {
+  border-radius: 0 0 4px 4px;
+  margin-top: -30px;
+  padding: 10px;
+  background-color: #a0a0a0;
+  color: #333;
+  font-size: 14px;
+}

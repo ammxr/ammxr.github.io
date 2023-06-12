@@ -6,7 +6,11 @@
     padding: 3rem;
     overflow: hidden;
   }
-  
+  .page-title {
+    text-align: center;
+    color: #36a7b7;
+    margin-top: 2rem;
+  }  
   .card-frame {
     display: flex;
     align-items: center;
@@ -22,16 +26,6 @@
     transition: transform 0.3s ease;
     margin: 0 0.5rem; /* Add margin to create a gap between cards */
   }
-  
-  
-
-
-  .card:hover {
-    transform: scale(1.2);
-    z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
-  }
-  
   
   .card .c-imageFrame {
     position: relative;
@@ -79,10 +73,10 @@
   }
   
   .previous {
-    margin-right: 10px;
+    margin-right: 30px;
   }
   
   .next {
-    margin-left: 10px;
+    margin-left: 30px;
   }
   

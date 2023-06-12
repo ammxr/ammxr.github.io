@@ -3,50 +3,50 @@ import './Projects.css';
 import Card from '../Card/Card';
 
 const Projects = () => {
-  const [cards] = useState([
-    { id: 1, title: 'Card 1' },
-    { id: 2, title: 'Card 2' },
-    { id: 3, title: 'Card 3' },
-    { id: 4, title: 'Card 4' },
-    { id: 5, title: 'Card 5' },
-    { id: 6, title: 'Card 6' },
-  ]);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const cardData = [
+    { id: 1, title: 'Card 1', description: 'Description for Card 1' },
+    { id: 2, title: 'Card 2', description: 'Description for Card 2' },
+    { id: 3, title: 'Card 3', description: 'Description for Card 3' },
+    { id: 4, title: 'Card 4', description: 'Description for Card 4' },
+    { id: 5, title: 'Card 5', description: 'Description for Card 5' },
+  ];
+
+  const [startCardIndex, setStartCardIndex] = useState(0);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    setStartCardIndex((prevIndex) =>
+      prevIndex === cardData.length - 3 ? 0 : prevIndex + 1
+    );
   };
 
   const handlePrevious = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-  };
-
-  const getCardIndex = (offset) => {
-    const index = (activeIndex + offset + cards.length) % cards.length;
-    return index;
+    setStartCardIndex((prevIndex) =>
+      prevIndex === 0 ? cardData.length - 3 : prevIndex - 1
+    );
   };
 
   return (
-    <div className="project-container">
-      <div className="arrow previous" onClick={handlePrevious}>
-        &lt;
-      </div>
-      <div className="card-frame">
-        <Card
-          title={cards[getCardIndex(-1)].title}
-          isActive={getCardIndex(-1) === activeIndex}
-        />
-        <Card
-          title={cards[getCardIndex(0)].title}
-          isActive={getCardIndex(0) === activeIndex}
-        />
-        <Card
-          title={cards[getCardIndex(1)].title}
-          isActive={getCardIndex(1) === activeIndex}
-        />
-      </div>
-      <div className="arrow next" onClick={handleNext}>
-        &gt;
+    <div>
+      <h1 className="page-title">PROJECTS</h1>
+      <div className="project-container">
+        <div className="arrow previous" onClick={handlePrevious}>
+          &lt;
+        </div>
+        <div className="card-frame">
+          {cardData
+            .slice(startCardIndex, startCardIndex + 3)
+            .map((card, index) => (
+              <Card
+                key={card.id}
+                title={card.title}
+                description={card.description}
+                isCenterCard={index === 1} // Add isCenterCard prop to mark the center card
+              />
+            ))}
+        </div>
+        <div className="arrow next" onClick={handleNext}>
+          &gt;
+        </div>
       </div>
     </div>
   );
