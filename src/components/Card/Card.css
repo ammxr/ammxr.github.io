@@ -58,3 +58,16 @@
   color: #333;
   font-size: 14px;
 }
+
+.card.center-card {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.card.center-card ~ .card {
+  transform: translateX(20px);
+}
+
+.card.center-card ~ .card.center-card {
+  transform: translateX(-20px);
+}

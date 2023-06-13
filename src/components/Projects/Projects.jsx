@@ -15,14 +15,19 @@ const Projects = () => {
 
   const handleNext = () => {
     setStartCardIndex((prevIndex) =>
-      prevIndex === cardData.length - 3 ? 0 : prevIndex + 1
+      prevIndex === cardData.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePrevious = () => {
     setStartCardIndex((prevIndex) =>
-      prevIndex === 0 ? cardData.length - 3 : prevIndex - 1
+      prevIndex === 0 ? cardData.length - 1 : prevIndex - 1
     );
+  };
+
+  const getCardAtIndex = (index) => {
+    const cardIndex = index % cardData.length;
+    return cardData[cardIndex];
   };
 
   return (
@@ -33,16 +38,14 @@ const Projects = () => {
           &lt;
         </div>
         <div className="card-frame">
-          {cardData
-            .slice(startCardIndex, startCardIndex + 3)
-            .map((card, index) => (
-              <Card
-                key={card.id}
-                title={card.title}
-                description={card.description}
-                isCenterCard={index === 1} // Add isCenterCard prop to mark the center card
-              />
-            ))}
+          {[startCardIndex, startCardIndex + 1, startCardIndex + 2].map((index) => (
+            <Card
+              key={getCardAtIndex(index).id}
+              title={getCardAtIndex(index).title}
+              description={getCardAtIndex(index).description}
+              isCenterCard={index === startCardIndex + 1}
+            />
+          ))}
         </div>
         <div className="arrow next" onClick={handleNext}>
           &gt;
