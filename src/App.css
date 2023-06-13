@@ -1,14 +1,15 @@
 :root {
-  --black: rgb(14, 14, 14);
+  --black: #1E1E1E;
   background-color: var(--black);
 }
 
 section {
-  /*scroll-snap-align: start; */
-  min-height: 100vh;
-  color: rgb(16, 16, 16);
-  scroll-snap-type: y mandatory;
-  overflow-y: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {

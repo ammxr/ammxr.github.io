@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import '../../App.css'
 import Card from '../Card/Card';
 
 const Projects = () => {
@@ -31,7 +32,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <section>
       <h1 className="page-title">PROJECTS</h1>
       <div className="project-container">
         <div className="arrow previous" onClick={handlePrevious}>
@@ -51,7 +52,7 @@ const Projects = () => {
           &gt;
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
