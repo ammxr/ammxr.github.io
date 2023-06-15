@@ -1,0 +1,162 @@
+.a-container {
+  display: flex;
+  height: 90vh;
+  margin-left: 21rem;
+  align-items: center;
+}
+
+/* Left side */
+.a-left {
+  margin-top: 14rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align circles to the right side */
+}
+
+.a-left > .a-secCircle {
+  margin-bottom: 2rem; /* Add spacing between the circles */
+}
+
+.a-contents {
+  color: var(--bluePrimary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.a-contents > :nth-child(1) {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.a-contents > :nth-child(2) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 4rem;
+}
+
+/* Right side */
+.a-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.a-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  border-radius: 100%;
+  border: 5px solid var(--blueSecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--smboxShadow);
+  background: rgb(101, 207, 223);
+}
+
+.a-secCircle > img {
+  transform: scale(0.4);
+}
+
+.a-secCircle:nth-child(1) {
+  top: 15rem;
+  left: -13rem;
+}
+
+.a-secCircle:nth-child(2) {
+  top: 17.5rem;
+  left: -17.5rem;
+}
+
+.a-secCircle:nth-child(3) {
+  top: 20rem;
+  left: -13rem;
+}
+
+.a-mainCircle {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  background: var(--bluePrimary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.a-mainCircleGlow {
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border: 36px solid #308995;
+  filter: blur(20.5px);
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.a-mainCircleLogo {
+  font-size: 3rem;
+  color: white;
+}
+
+.a-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .a-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.7);
+  }
+
+  .a-mainCircle {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    background: var(--bluePrimary);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .a-mainCircleGlow {
+    position: absolute;
+    width: 469px;
+    height: 469px;
+    border: 36px solid #308995;
+    filter: blur(20.5px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: -36px;
+    left: -36px;
+    z-index: 3;
+  }
+}
