@@ -88,7 +88,9 @@
 }
 
 .a-secCircle > img {
-  transform: scale(0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .a-secCircle:nth-child(1) {

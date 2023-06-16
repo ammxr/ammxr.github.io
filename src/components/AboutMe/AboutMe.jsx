@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
-import pkFlag from "../../images/AmmarHakimLogoInitials.png";
-import tmuLogo from "../../images/AmmarHakimLogoInitials.png";
+import pkFlag from "../../images/pkLogo.png";
+import tmuLogo from "../../images/tmuLogo.png";
 import programmingLogo from "../../images/AmmarHakimLogoInitials.png";
 
 const AboutMe = () => {
@@ -20,9 +20,15 @@ const AboutMe = () => {
       </div>
 
       <div className="a-right">
-        <div className="a-secCircle"></div>
-        <div className="a-secCircle"></div>
-        <div className="a-secCircle"></div>
+        <div className="a-secCircle">
+          <img src={pkFlag} alt="PK Flag" />
+        </div>
+        <div className="a-secCircle">
+          <img src={tmuLogo} alt="TMU Logo" />
+        </div>
+        <div className="a-secCircle">
+          <img src={programmingLogo} alt="Programming Logo" />
+        </div>
         <div className="a-mainCircle">
           <div className="a-mainCircleGlow"></div>
           <div className="a-mainCircleLogo">Logo</div>
