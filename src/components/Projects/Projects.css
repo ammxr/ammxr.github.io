@@ -1,4 +1,4 @@
-.project-container {
+.p-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.page-title {
+.p-title {
   font-family: Inter, sans-serif;
   font-size: 8rem;
   font-weight: 400;

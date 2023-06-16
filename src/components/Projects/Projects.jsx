@@ -33,8 +33,8 @@ const Projects = () => {
 
   return (
     <section>
-      <h1 className="page-title">PROJECTS</h1>
-      <div className="project-container">
+      <h1 className="p-title">PROJECTS</h1>
+      <div className="p-container">
         <div className="arrow previous" onClick={handlePrevious}>
           &lt;
         </div>
