@@ -25,22 +25,44 @@
   position: relative;
 }
 
-.a-contents > :nth-child(1) {
+.a-title {
   color: white;
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: right; /* Align the title to the right */
+  text-transform: uppercase; /* Convert to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  animation: fade-in 1s ease-out; /* Add fade-in animation */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
 }
 
-.a-contents > :nth-child(2) {
+.a-description {
   color: var(--gray);
   font-size: 14px;
   margin-top: 1rem;
+  text-align: right; /* Align the description to the right */
+  line-height: 1.5; /* Increase line height */
+  animation: slide-up 1s ease-out; /* Add slide-up animation */
+  font-family: "Arial", sans-serif; /* Specify a font family */
 }
 
 .s-button {
   width: 8rem;
   height: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  align-self: flex-end; /* Align button to the right */
+  background-color: var(--blueSecondary);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.s-button:hover {
+  background-color: var(--blueHover);
 }
 
 /* Right side */
@@ -62,7 +84,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: var(--smboxShadow);
-  background: rgb(101, 207, 223);
+  background: var(--bluePrimary);
 }
 
 .a-secCircle > img {
@@ -118,6 +140,24 @@
   width: 13rem;
   border-radius: 100%;
   z-index: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 480px) {
