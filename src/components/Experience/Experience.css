@@ -1,4 +1,6 @@
 .e-sec {
+  align-items: center;
+  justify-content: center;
   font-family: 'Alata', sans-serif;
   line-height: 90%;
   text-align: left;
@@ -8,26 +10,36 @@
   display: flex;
 }
 
+ul {
+  line-height: 1.5;
+}
+h2 {
+  color: var(--bluePrimary);
+}
+
 e-name {
+  margin-top: 2rem;
   font-size: 4vw;
   font-weight: 700;
-  margin: 0;
-  line-height: 50%;
-  align-items: left;
-  position: absolute;
+  padding-left: 1.3rem;
+  text-align: center;
+  justify-content: center;
   left: 10%; 
   bottom: 30%; 
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 .e-title {
+  margin-right: 2rem;
   position: relative;
   display: flex;
   padding: 20px;
   background-color: #70b6dc;
-  width: 50%; 
-  height: 10vh; 
+  width: 4rem;
+  height: 110vh; 
   border-radius: 10px;
   overflow: hidden; 
 }
@@ -38,12 +50,13 @@ e-name {
 
 .e-experience {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 30px;
 }
 
 .e-year {
   flex: 0 0 60px;
-  font-size: 1.5rem;
+  font-size: 3px;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -57,10 +70,7 @@ e-name {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
-}
-
-.e-description h2 {
-  margin-top: 0;
+  flex-grow: 1;
 }
 
 .e-description p {
@@ -107,6 +117,13 @@ e-name {
   box-shadow: inset 0 0 10vw rgba(110, 255, 255, 0.542);
   animation: spin 10s infinite linear;
 }
+
+.e-experience :hover {
+  background-color: var(--black);
+  color: #fff;
+  cursor: pointer;
+}
+  
 
 @keyframes spin {
   100% {
