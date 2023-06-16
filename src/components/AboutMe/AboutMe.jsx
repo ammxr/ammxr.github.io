@@ -7,7 +7,6 @@ import programmingLogo from "../../images/AmmarHakimLogoInitials.png";
 const AboutMe = () => {
   return (
     <div className="a-container" id="a-container">
-
       <div className="a-left">
         <div className="a-contents">
           <h1 className="a-title">About Me</h1>
