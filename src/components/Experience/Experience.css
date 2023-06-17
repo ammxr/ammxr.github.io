@@ -12,6 +12,7 @@
 
 ul {
   line-height: 1.5;
+  color: white;
 }
 h2 {
   color: var(--bluePrimary);
@@ -48,13 +49,15 @@ e-name {
   margin-top: 40px;
 }
 
-.e-experience {
+
+.e-card {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
+  flex-direction: row;
 }
 
 .e-year {
+  width: 4rem;
+  height: 1rem;
   flex: 0 0 60px;
   font-size: 3px;
   font-weight: bold;
@@ -63,7 +66,6 @@ e-name {
   background-color: #70b6dc;
   padding: 10px;
 }
-
 .e-description {
   color: #000000;
   padding: 20px;
@@ -119,9 +121,7 @@ e-name {
 }
 
 .e-experience :hover {
-  background-color: var(--black);
-  color: #fff;
-  cursor: pointer;
+  background-color: var(--sectionLine);
 }
   
 
@@ -135,6 +135,7 @@ e-name {
 }
 
 .e-experience {
+  color: white;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
@@ -151,7 +152,7 @@ e-name {
 }
 
 .e-description {
-  background-color: #f1f1f1;
+  background-color: var(--black);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

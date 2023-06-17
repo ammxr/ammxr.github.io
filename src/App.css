@@ -1,7 +1,9 @@
 :root {
   --black: #1E1E1E;
-  --bluePrimary: #36A7B7;
-  --blueSecondary: #308995;
+  --sectionLine: #2f2f2f;
+  --gray: #2f2f2f;
+  --bluePrimary: #70B6DC;
+  --blueSecondary: #69a8cb;
   --black : #0e0e0e;
   --white : #fff;
   --gray : #788097;

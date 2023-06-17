@@ -5,11 +5,10 @@ import Card from '../Card/Card';
 
 const Projects = () => {
   const cardData = [
-    { id: 1, title: 'Card 1', description: 'Description for Card 1' },
-    { id: 2, title: 'Card 2', description: 'Description for Card 2' },
-    { id: 3, title: 'Card 3', description: 'Description for Card 3' },
-    { id: 4, title: 'Card 4', description: 'Description for Card 4' },
-    { id: 5, title: 'Card 5', description: 'Description for Card 5' },
+    { id: 1, title: 'AutoServer', description: '' },
+    { id: 2, title: 'MedVisor', description: 'Created a web app using Flask and Coheres API to integrate a classification conventional neural network trained by my group. Surveys user asking a variety of symptomatic questions it then uses its machine learning to decide on the appropriate doctor/physyican to reccomend. The model feeds back satisfied tests back into its deep learning model to make it self-growing and autonomous.' },
+    { id: 3, title: 'DOT Stress Analysis', description: 'Description for Card 3' },
+    { id: 4, title: 'MusicStore', description: 'Developed a sophisticated, object-oriented Music Store application leveraging the power of inheritance to enhance functionality. Implemented an array of features, including lyrics, library, podcasts, customizable playlists, songs, audiobooks, and a store file. Meticulously organized commands within their respective files and expertly consolidated them in the UI file for a collected application' },
   ];
 
   const [startCardIndex, setStartCardIndex] = useState(0);

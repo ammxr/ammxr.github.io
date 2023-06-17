@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutMe.css";
 import pkFlag from "../../images/pkLogo.png";
 import tmuLogo from "../../images/tmuLogo.png";
-import programmingLogo from "../../images/AmmarHakimLogoInitials.png";
+import programmingLogo from "../../images/tmuLogo.png";
 
 const AboutMe = () => {
   return (
@@ -14,8 +14,7 @@ const AboutMe = () => {
             <div className="a-wave"></div>
           </div>
           <p className="a-description">
-            Who is Ammar Hakim? I am a 17-year-old boy born in Gujrat Pakistan coming to this country when I was just 2 years old. Upon immigration, my family and I had settled in an apartment in Toronto ON for a period of 5 years where we had then moved to a house in Mississauga where we have permanently settled ever since.
-            My Hobbies Personally, I come to enjoy lots of various activities, my favourite, team sports. Some hobbies which I enjoy include sports such as basketball and soccer which in regular years have played outside of school leagues. In terms of my enjoyment solo, I love playing video games with cool stories and journeys and very much enjoy programming. Programming is something which I have day by day been taking excessive interest in-- the language of machines. I am also keen in the field of video editing and photoshop. Over the course of many years I have become very proficient and strong at these skills and day by day continue to develop and practice as a sort of art distracting my mind from stressors.
+          Hey there! I'm Ammar Hakim, a second-year computer science student at Toronto Metropolitan University. I'm driven by an insatiable passion for machine learning and the incredible advancements it promises for the future. Originally from Gujrat, Pakistan, I've been immersed in the world of technology since a young age. As I settled in Mississauga with my family, my fascination with programming and the language of machines took off. Every day, I'm captivated by the endless possibilities and exciting challenges that computer science offers. With a keen eye for detail and a creative mindset, I thrive on solving complex problems through coding. From developing innovative software solutions to exploring cutting-edge algorithms, I find joy in pushing the boundaries of what's possible. Join me on this exhilarating journey as I continue to hone my skills, delve into new technologies, and make a meaningful impact in the world of computer science. Together, let's shape a future powered by innovation and limitless potential.                      
           </p>
           <button className="button s-button">My Resume</button>
         </div>

@@ -2,7 +2,6 @@
   display: flex;
   height: 90vh;
   margin-left: 21rem;
-  align-items: center;
 }
 
 /* Left side */
@@ -34,7 +33,7 @@
   letter-spacing: 2px;
   animation: fade-in 1s ease-out;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  z-index: var(-topZIndex);
+  z-index: var(--topZIndex);
 }
 
 .a-description {
@@ -125,7 +124,7 @@
   position: absolute;
   width: 18rem;
   height: 18rem;
-  border: 36px solid #308995;
+  border: 36px solid var(--blueSecondary);
   filter: blur(20.5px);
   box-sizing: border-box;
   border-radius: 50%;
