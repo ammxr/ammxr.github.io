@@ -14,7 +14,7 @@ const AboutMe = () => {
             <div className="a-wave"></div>
           </div>
           <p className="a-description">
-          Hey there! I'm Ammar Hakim, a second-year computer science student at Toronto Metropolitan University. I'm driven by an insatiable passion for machine learning and the incredible advancements it promises for the future. Originally from Gujrat, Pakistan, I've been immersed in the world of technology since a young age. As I settled in Mississauga with my family, my fascination with programming and the language of machines took off. Every day, I'm captivated by the endless possibilities and exciting challenges that computer science offers. With a keen eye for detail and a creative mindset, I thrive on solving complex problems through coding. From developing innovative software solutions to exploring cutting-edge algorithms, I find joy in pushing the boundaries of what's possible. Join me on this exhilarating journey as I continue to hone my skills, delve into new technologies, and make a meaningful impact in the world of computer science. Together, let's shape a future powered by innovation and limitless potential.                      
+           Hi👋 I'm Ammar Hakim! I'm a student at Toronto Metropolitan University, pursuing my passion for technology 🌐📱 and diving deeper into the fascinating world of machine learning 🤖📚. I'm constantly exploring new frontiers in this field and eager to contribute to its advancements. Let's connect and embark on this exciting journey together! 🚀🔬
           </p>
           <button className="button s-button">My Resume</button>
         </div>

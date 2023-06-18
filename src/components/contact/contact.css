@@ -1,49 +1,77 @@
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0;
+  height: 10vh;
+  padding: 80px 0;
+  background: linear-gradient(var(--black), var(--darkGray));
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-title {
-  font-size: 2rem;
-  color: #70b6dc;
-  margin-bottom: 1.5rem;
+  font-size: 28px;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 .contact-links {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  animation: slideInUp 1s ease-in-out;
 }
 
-.contact-button,
-.contact-link {
-  margin: 0.5rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.contact-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: var(--bluePrimary);
+  transition: transform 0.3s, color 0.3s;
 }
 
-.contact-button {
-  background-color: #70b6dc;
+.contact-links a:hover {
+  transform: scale(1.2);
+  color: var(--bluePrimary);
 }
 
-.contact-button:hover {
-  background-color: #368fb3;
+.github-icon,
+.linkedin-icon,
+.mail-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 2s infinite linear;
 }
 
-.contact-link {
-  background-color: #ffffff;
-  border: 1px solid #70b6dc;
-  color: #70b6dc;
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.contact-link:hover {
-  background-color: #f2f2f2;
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

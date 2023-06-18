@@ -120,8 +120,16 @@ e-name {
   animation: spin 10s infinite linear;
 }
 
-.e-experience :hover {
-  background-color: var(--sectionLine);
+.e-experience {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.e-experience:hover {
+  transform: translateX(20px);
 }
   
 
@@ -130,16 +138,12 @@ e-name {
     transform: rotate(360deg);
   }
 }
+
 .e-timeline {
   margin-top: 40px;
 }
 
-.e-experience {
-  color: white;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
-}
+
 
 .e-year {
   flex: 0 0 60px;
