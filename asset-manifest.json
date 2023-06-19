@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ammxr.github.io/static/css/main.de7b15dd.css",
+    "main.js": "/ammxr.github.io/static/js/main.9a53a5b0.js",
+    "static/media/musicStoreProjectThumbnail.jpg": "/ammxr.github.io/static/media/musicStoreProjectThumbnail.78d7207b90572f06834c.jpg",
+    "static/media/autoServerProjectThumbnail.jpg": "/ammxr.github.io/static/media/autoServerProjectThumbnail.2569690f87f1dff675eb.jpg",
+    "static/media/dotProjectThumbnail.jpg": "/ammxr.github.io/static/media/dotProjectThumbnail.e9d2b2538c0d35365c18.jpg",
+    "index.html": "/ammxr.github.io/index.html",
+    "main.de7b15dd.css.map": "/ammxr.github.io/static/css/main.de7b15dd.css.map",
+    "main.9a53a5b0.js.map": "/ammxr.github.io/static/js/main.9a53a5b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de7b15dd.css",
+    "static/js/main.9a53a5b0.js"
+  ]
+}
